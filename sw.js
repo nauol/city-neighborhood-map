@@ -1,4 +1,4 @@
-var CACHE = "quartiers-v6";
+var CACHE = "quartiers-v8";
 var FILES = ["./", "index.html", "manifest.json", "icons/city-icon-192.png", "icons/city-icon-512.png"];
 self.addEventListener("install", function (e) {
   e.waitUntil(caches.open(CACHE).then(function (c) { return c.addAll(FILES); }));
